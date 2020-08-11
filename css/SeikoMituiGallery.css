@@ -15,10 +15,14 @@ body {
 .about{
 	padding: 10px 35px 5px;
 
-	/* color: rgb(0, 204, 255); */
-	/* color: rgb(143, 173, 207); */
-	/* background-image: linear-gradient(to bottom, rgba(70, 55, 14, 0.534) 50%, rgba(0, 0, 0, 0)); */
-	/* background-color: rgba(71, 14, 14, 0.479); */
+	/* background-color: rgba(134, 26, 26, 0.856); */
+	
+	color: white;
+	color: rgb(143, 173, 207);
+	color: rgb(0, 204, 255);
+	
+	/* background-color: black; */
+	/* mix-blend-mode: screen; */
 }
 
 .about hr{
