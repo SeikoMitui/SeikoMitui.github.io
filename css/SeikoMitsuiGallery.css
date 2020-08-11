@@ -1,0 +1,27 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  background: url('../images/hana_no_aru_bin-flower_and_bottle.JPG') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+
+  padding-top: 52px;
+}
+
+
+.about{
+	padding: 10px 35px 5px;
+
+	/* color: rgb(0, 204, 255); */
+	/* color: rgb(143, 173, 207); */
+	/* background-image: linear-gradient(to bottom, rgba(70, 55, 14, 0.534) 50%, rgba(0, 0, 0, 0)); */
+	/* background-color: rgba(71, 14, 14, 0.479); */
+}
+
+.about hr{
+	border-top: 1px solid rgb(179, 179, 179);
+
+}
