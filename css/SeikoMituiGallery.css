@@ -1,8 +1,14 @@
 
+:root {
+	--foreground-light: rgb(192, 231, 253);
+	--foreground-dark: rgb(49, 49, 73);
+	--foreground-brown: rgb(80, 38, 14);
+  }
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-  background: url('../images/hana_no_aru_bin-flower_and_bottle.JPG') no-repeat center center fixed;
+  background: url('../images/seibutsu-object_7.JPG') no-repeat bottom center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -15,17 +21,25 @@ body {
 .about{
 	padding: 10px 35px 5px;
 
-	background-color: rgba(87, 0, 0, 0.61);
-	
-	color: rgb(143, 173, 207);
-	color: rgb(0, 204, 255);
+	/* background-color: var(--dark-color); */
+	color: var(--foreground-light);
+	/* background-image: url('../images/tileable//brown_background_oil_tileable.jpg'); */
+	background-color: rgba(66, 0, 0, 0.37);
+	backdrop-filter: blur(6px) saturate(20%);
+	border: 1px solid rgba(235, 235, 235, 0.329);
 }
 
-.about button{
-	background-color: rgb(0, 204, 255);
-	color: black;
+.about .btn{
+	color: var(--foreground-brown);
+	background-color: var(--foreground-light);
+
+	border-radius: 2px;
+	border: 0px solid rgb(131, 131, 131);
+
+	padding: 1px 8px;
+	font-size: 150%;
 }
 
 .about hr{
-	border-top: 1px solid rgb(179, 179, 179);
+	border-top: 1px solid gray;
 }
