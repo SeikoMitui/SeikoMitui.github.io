@@ -44,22 +44,29 @@
 
 <!-- Modal Image Popup -->
 <div class="modal fade" id="paintingCloseupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl">
+	<div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Bin</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-	  </div>
-	  
+      </div>
       <div class="modal-body">
         <img src="images/paintings/bin_bottle.JPG" alt="Ship Stats" class="img-rounded img-fluid" />
       </div>
-     
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
     </div>
   </div>
 </div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#paintingCloseupModal">
+	Launch demo modal
+</button>
 
 <!-- Page Content -->
 <div class="container mt-5">
