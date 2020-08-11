@@ -5,7 +5,7 @@
 	--foreground-brown: rgb(80, 38, 14);
 
 	--background-dark: rgb(49, 49, 73);
-	--background-light: rgb(243, 243, 243);
+	--background-light: rgb(154, 168, 177);
   }
 
 body {
@@ -39,7 +39,8 @@ body {
 
 .about .btn{
 	color: var(--foreground-brown);
-	background-color: var(--foreground-light);
+	/* background-color: var(--foreground-light); */
+	background-color: rgb(159, 207, 214);
 
 	border-radius: 2px;
 	border: 0px solid rgb(131, 131, 131);
@@ -54,4 +55,10 @@ body {
 
 .navbar-dark{
 	background-color: var(--background-dark);
+}
+
+.photo-card{
+	margin-bottom: 20px;
+	padding: 10px;
+	background-color: rgb(236, 236, 236);
 }
