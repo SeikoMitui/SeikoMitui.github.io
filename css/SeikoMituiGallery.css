@@ -15,17 +15,17 @@ body {
 .about{
 	padding: 10px 35px 5px;
 
-	/* background-color: rgba(134, 26, 26, 0.856); */
+	background-color: rgba(87, 0, 0, 0.61);
 	
-	color: white;
 	color: rgb(143, 173, 207);
 	color: rgb(0, 204, 255);
-	
-	/* background-color: black; */
-	/* mix-blend-mode: screen; */
+}
+
+.about button{
+	background-color: rgb(0, 204, 255);
+	color: black;
 }
 
 .about hr{
 	border-top: 1px solid rgb(179, 179, 179);
-
 }
