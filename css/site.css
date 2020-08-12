@@ -34,10 +34,22 @@ body {
 	color: rgb(192, 231, 253);
 	color: var(--foreground-light);
 
-	background-color: rgba(66, 0, 0, 0.253);
-	backdrop-filter: blur(6px) saturate(20%);
+	background-color: rgba(46, 0, 0, 0.63);
+
 	border: 1px solid rgba(235, 235, 235, 0.329);
 }
+
+@supports  ( backdrop-filter: blur(6px) ) {
+	.about {
+		background-color: blue;
+	}
+	
+@supports (-webkit-backdrop-filter: none ) {
+	.about {
+		background-color: orange;
+	}
+}
+
 
 .about .btn{
 	/* background-color: undefined; background-color: var(--foreground-light); */
