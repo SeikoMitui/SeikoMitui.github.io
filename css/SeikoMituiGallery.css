@@ -57,6 +57,18 @@ body {
 	background-color: var(--background-dark);
 }
 
+#paintingCloseupModal .modal-header {
+	padding: 6px 16px;
+}
+
+#paintingCloseupModal .modal-title {
+	font-size: 150%;
+}
+
+#paintingCloseupModal .modal-footer {
+	padding: 6px 12;
+}
+
 .photo-card{
 	margin-bottom: 20px;
 	padding: 10px;
