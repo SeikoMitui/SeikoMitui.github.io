@@ -43,7 +43,7 @@ body {
 
 	color: slategray;
 	
-	border: 1px solid rgba(196, 196, 196, 0.555);
+	border: 1px solid rgba(134, 134, 134, 0.555);
 }
 
 @supports  ( background-clip: text ) or ( -webkit-background-clip: text ) {
