@@ -2,9 +2,6 @@
 :root {
 	--foreground-light: rgb(192, 231, 253);
 	--foreground-dark: rgb(29, 29, 46);
-
-	--background-dark: rgb(49, 49, 73);
-	--background-light: rgb(154, 168, 177);
   }
 
 body {
@@ -13,16 +10,19 @@ body {
 }
 
 .bottle-background {
-	background: url('../images/seibutsu-object_7.JPG') no-repeat bottom center fixed;
+	background: url('../images/paintings/seibutsu-object_7.JPG') no-repeat bottom center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
 }
 
-.background-light {
-	background-color: rgb(154, 168, 177);
-	background-color: var(--background-light);
+.gallery-background {
+	background: url('../images/gray-to-red-oil-background.jpg') no-repeat bottom center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
 }
 
 
@@ -36,9 +36,46 @@ body {
 	border: 1px solid rgba(235, 235, 235, 0.329);
 }
 
+.photo-card{
+	margin-bottom: 20px;
+	padding: 14px;
+	background-color: rgba(224, 224, 224, 0.877);
+
+	color: slategray;
+	
+	border: 1px solid rgba(196, 196, 196, 0.555);
+}
+
+@supports  ( background-clip: text ) or ( -webkit-background-clip: text ) {
+	.about .knockout-text {
+		background: url('../images/paintings/seibutsu-object_7.JPG') no-repeat bottom center fixed;
+
+		background-clip: text;
+		-webkit-background-clip: text;
+		
+		color: rgba(255, 255, 255, 0.5) !important;
+	}
+	.photo-card{
+		background-color: rgba(0, 0, 0, 0.616);
+	}
+	.photo-card .knockout-text{
+		background: url('../images/gray-to-red-oil-background.jpg') no-repeat bottom center fixed;
+		background-clip: text;
+		-webkit-background-clip: text;
+		
+		color: rgba(255, 255, 255, 0.39);
+	}
+}
+
 @supports  ( backdrop-filter: blur(4px) ) or ( -webkit-backdrop-filter: blur(4px) ) {
 	.about {
 		background-color: rgba(34, 0, 0, 0.568);
+		backdrop-filter: blur(4px);
+		-webkit-backdrop-filter: blur(4px);
+	}
+
+	.photo-card{
+		background-color: rgba(0, 0, 0, 0.411);
 		backdrop-filter: blur(4px);
 		-webkit-backdrop-filter: blur(4px);
 	}
@@ -55,17 +92,6 @@ body {
 		background-color: rgba(34, 0, 0, 0.568);
 		backdrop-filter: blur(4px) saturate(20%);
 		-webkit-backdrop-filter: blur(4px) saturate(20%)
-	}
-}
-
-@supports  ( background-clip: text ) or ( -webkit-background-clip: text ) {
-	.background-clip {
-		background: url('../images/seibutsu-object_7.JPG') no-repeat bottom center fixed;
-
-		background-clip: text;
-		-webkit-background-clip: text;
-		
-		color: rgba(255, 255, 255, 0.5) !important;
 	}
 }
 
@@ -86,8 +112,7 @@ body {
 }
 
 .navbar-dark{
-	background-color: rgb(49, 49, 73);
-	background-color: var(--background-dark);
+	background-color: rgb(45, 20, 48);
 }
 
 #paintingCloseupModal .modal-header {
@@ -107,12 +132,4 @@ body {
 }
 #paintingCloseupModal .modal-body {
 	background-color: rgb(245, 245, 245);
-}
-
-.photo-card{
-	margin-bottom: 20px;
-	padding: 14px;
-	background-color: rgb(245, 245, 245);
-
-	border: 1px solid rgb(255, 255, 255);
 }
