@@ -38,7 +38,7 @@ body {
 
 .photo-card{
 	margin-bottom: 20px;
-	padding: 14px;
+	padding: 20px;
 	background-color: rgba(224, 224, 224, 0.877);
 
 	color: slategray;
@@ -60,6 +60,7 @@ body {
 	}
 	.photo-card .knockout-text{
 		background: url('../images/gray-to-red-oil-background.jpg') no-repeat bottom center fixed;
+
 		background-clip: text;
 		-webkit-background-clip: text;
 		
