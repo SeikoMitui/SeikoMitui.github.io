@@ -43,6 +43,7 @@ body {
 	.about {
 		background-color: blue;
 	}
+}
 	
 @supports (-webkit-backdrop-filter: none ) {
 	.about {
