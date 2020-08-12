@@ -34,22 +34,38 @@ body {
 	color: rgb(192, 231, 253);
 	color: var(--foreground-light);
 
-	background-color: rgba(46, 0, 0, 0.63);
+	background-color: rgba(32, 0, 0, 0.705);
 
 	border: 1px solid rgba(235, 235, 235, 0.329);
 }
 
 @supports  ( backdrop-filter: blur(6px) ) {
 	.about {
-		background-color: blue;
+		background-color: rgba(34, 0, 0, 0.568);
+		backdrop-filter: blur(6px);
 	}
 }
-	
-@supports (-webkit-backdrop-filter: none ) {
+@supports  ( backdrop-filter: saturate(20%) ) {
 	.about {
-		background-color: orange;
+		background-color: rgba(34, 0, 0, 0.568);
+		backdrop-filter: saturate(20%);
 	}
 }
+@supports  ( backdrop-filter: blur(5px) saturate(20%) ) or ( -webkit-backdrop-filter: blur(5px) saturate(20%) ) {
+	.about {
+		background-color: rgba(34, 0, 0, 0.568);
+		backdrop-filter: blur(5px) saturate(20%);
+		-webkit-backdrop-filter: blur(5px) saturate(20%)
+	}
+}
+
+
+	
+/* @supports (-webkit-backdrop-filter: blur(6px) ) {
+	.about {
+		-webkit-backdrop-filter: blur(6px);
+	}
+} */
 
 
 .about .btn{
@@ -71,7 +87,7 @@ body {
 
 .navbar-dark{
 	background-color: rgb(49, 49, 73);
-	background-color: var(--background-dark); 
+	background-color: var(--background-dark);
 }
 
 #paintingCloseupModal .modal-header {
