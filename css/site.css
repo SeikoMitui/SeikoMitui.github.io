@@ -10,7 +10,7 @@ body {
 }
 
 .bottle-background {
-	background: url('../images/paintings/seibutsu-object_7.JPG') no-repeat bottom center fixed;
+	background: url('../images/paintings/wide/seibutsu-object_7.JPG') no-repeat bottom center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -48,7 +48,7 @@ body {
 
 @supports  ( background-clip: text ) or ( -webkit-background-clip: text ) {
 	.about .knockout-text {
-		background: url('../images/paintings/seibutsu-object_7.JPG') no-repeat bottom center fixed;
+		background: url('../images/paintings/wide/seibutsu-object_7.JPG') no-repeat bottom center fixed;
 
 		background-clip: text;
 		-webkit-background-clip: text;
