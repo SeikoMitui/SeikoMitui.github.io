@@ -22,6 +22,7 @@ body {
 }
 
 .background-light {
+	background-color: rgb(154, 168, 177);
 	background-color: var(--background-light);
 }
 
@@ -29,17 +30,19 @@ body {
 .about{
 	padding: 10px 35px 5px;
 
-	/* background-color: var(--dark-color); */
+	/* background-color: undefined; background-color: var(--dark-color); */
+	color: rgb(192, 231, 253);
 	color: var(--foreground-light);
-	/* background-image: url('../images/tileable//brown_background_oil_tileable.jpg'); */
-	background-color: rgba(66, 0, 0, 0.37);
+
+	background-color: rgba(66, 0, 0, 0.253);
 	backdrop-filter: blur(6px) saturate(20%);
 	border: 1px solid rgba(235, 235, 235, 0.329);
 }
 
 .about .btn{
-	color: var(--foreground-brown);
-	/* background-color: var(--foreground-light); */
+	/* background-color: undefined; background-color: var(--foreground-light); */
+	color: rgb(80, 38, 14);
+	color: var(--foreground-brown); 
 	background-color: rgb(159, 207, 214);
 
 	border-radius: 2px;
@@ -54,7 +57,8 @@ body {
 }
 
 .navbar-dark{
-	background-color: var(--background-dark);
+	background-color: rgb(49, 49, 73);
+	background-color: var(--background-dark); 
 }
 
 #paintingCloseupModal .modal-header {
@@ -67,6 +71,13 @@ body {
 
 #paintingCloseupModal .modal-footer {
 	padding: 6px 12;
+}
+
+#paintingCloseupModal .modal-content {
+	padding: 6px 12;
+}
+#paintingCloseupModal .modal-body {
+	background-color: rgb(245, 245, 245);
 }
 
 .photo-card{
