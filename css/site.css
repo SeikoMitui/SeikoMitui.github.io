@@ -14,23 +14,18 @@ body {
 .bottle-background {
 	background: url('../images/paintings/wide/seibutsu-object_7.JPG') no-repeat bottom center fixed;
 	-webkit-background-size: cover;
-	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
 }
 
 .gallery-background {
-	background: url('../images/gray-to-red-oil-background.jpg') no-repeat bottom center fixed;
+	/* background: url('../images/gray-to-red-oil-background.jpg') no-repeat bottom center fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
-	-o-background-size: cover;
-
-	background-attachment: fixed;
+	-o-background-size: cover; */
 }
 
 #ios-gallery-background{
-	background: url('../images/gray-to-red-oil-background.jpg') no-repeat bottom center fixed;
-
 	min-height: 100%;
 	min-width: 1477px;
 
