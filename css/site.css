@@ -46,6 +46,30 @@ body {
 	border: 1px solid rgba(134, 134, 134, 0.555);
 }
 
+.dark-glass {
+	background-color: rgba(224, 224, 224, 0.877);
+	color: slategray;
+	border: 1px solid rgba(134, 134, 134, 0.555);
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #b80000;
+    background-color: rgb(247, 247, 247);
+    border-color: #ddd;
+}
+
+.pagination > .active > a
+{
+	font-weight: bold;
+	color: rgb(194, 28, 28) !important;
+	background-color: rgba(240, 240, 240, 0.877) !important;
+    border: solid 1px rgb(177, 177, 177) !important;
+}
+
 @supports  ( background-clip: text ) or ( -webkit-background-clip: text ) {
 	.about .knockout-text {
 		background: url('../images/paintings/wide/seibutsu-object_7.JPG') no-repeat bottom center fixed;
@@ -55,10 +79,11 @@ body {
 		
 		color: rgba(255, 255, 255, 0.5) !important;
 	}
-	.photo-card{
+	.dark-glass{
 		background-color: rgba(0, 0, 0, 0.616);
+		color: white;
 	}
-	.photo-card .knockout-text{
+	.dark-glass .knockout-text{
 		background: url('../images/gray-to-red-oil-background.jpg') no-repeat bottom center fixed;
 
 		background-clip: text;
@@ -75,10 +100,31 @@ body {
 		-webkit-backdrop-filter: blur(4px);
 	}
 
-	.photo-card{
+	.dark-glass{
 		background-color: rgba(0, 0, 0, 0.411);
 		backdrop-filter: blur(4px);
 		-webkit-backdrop-filter: blur(4px);
+
+		font-weight: bold;
+		color: rgba(255, 255, 255, 0.39);
+	}
+
+	.pagination > li > a:focus,
+	.pagination > li > a:hover,
+	.pagination > li > span:focus,
+	.pagination > li > span:hover
+	{
+		color: #b80000;
+		background-color: rgba(247, 247, 247, 0.288);
+		border-color: rgba(128, 128, 128, 0.212);
+	}
+
+	.pagination > .active > a
+	{
+		font-weight: bold;
+		color: rgb(255, 107, 107) !important;
+		background-color: rgba(0, 0, 0, 0.473) !important;
+		border: solid 1px rgba(0, 0, 0, 0.062) !important;
 	}
 }
 @supports  ( backdrop-filter: saturate(20%) ) or ( -webkit-backdrop-filter: saturate(20%) ) {
