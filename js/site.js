@@ -15,4 +15,18 @@ $('#paintingCloseupModal').on('show.bs.modal', function (event) {
 	var modalImage = document.getElementById('paintingCloseupModal-img').src = srcAttr; //faster?
 	modalImage.src = srcAttr;
 	modalImage.alt = altAttr;
-})
+});
+
+function iOS() {
+	return [
+	  'iPad Simulator',
+	  'iPhone Simulator',
+	  'iPod Simulator',
+	  'iPad',
+	  'iPhone',
+	  'iPod'
+	].includes(navigator.platform)
+	// iPad on iOS 13 detection
+	|| (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+  };
+
