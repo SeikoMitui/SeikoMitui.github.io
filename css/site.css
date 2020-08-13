@@ -123,7 +123,7 @@ body {
 	.pagination > .active > a
 	{
 		font-weight: bold;
-		color: rgb(50, 224, 255) !important;
+		color: rgb(50, 255, 60) !important;
 		background-color: rgba(0, 0, 0, 0.473) !important;
 		border: solid 1px rgba(0, 0, 0, 0.253) !important;
 	}
