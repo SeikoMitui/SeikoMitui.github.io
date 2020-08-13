@@ -30,3 +30,11 @@ function iOS() {
 	|| (navigator.userAgent.includes("Mac") && "ontouchend" in document)
   };
 
+  function backgroundSelect() {
+	  if ( iOS() ) {
+		  document.getElementById("ios-gallery-background").style.display = 'block';
+	  }
+	  else{
+		document.getElementById("ios-gallery-background").style.display = 'none';
+	  }
+  }  

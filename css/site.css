@@ -7,6 +7,8 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-top: 52px;
+
+  background-color: black;
 }
 
 .bottle-background {
@@ -27,7 +29,7 @@ body {
 }
 
 #ios-gallery-background{
-	background: url('../images/paintings/tall/hana-flower.JPG') no-repeat bottom center fixed;
+	background: url('../images/gray-to-red-oil-background.jpg') no-repeat bottom center fixed;
 
 	min-height: 100%;
 	min-width: 1477px;
@@ -138,8 +140,8 @@ body {
 	.pagination > .active > a
 	{
 		font-weight: bold;
+		color: rgb(85, 178, 255) !important;
 		color: rgb(106, 225, 255) !important;
-		color: rgb(255, 6, 81) !important;
 		background-color: rgba(0, 0, 0, 0.473) !important;
 		border: solid 1px rgba(0, 0, 0, 0.253) !important;
 	}
