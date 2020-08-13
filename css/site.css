@@ -19,12 +19,11 @@ body {
 
 .gallery-background {
 	background: url('../images/gray-to-red-oil-background.jpg') no-repeat bottom center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
 	background-size: cover;
+	-webkit-background-size: cover;
 	-o-background-size: cover;
 
-background-attachment: scroll;
+	background-attachment: fixed;
 }
 
 
