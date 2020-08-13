@@ -24,8 +24,7 @@ body {
 	background-size: cover;
 	-o-background-size: cover;
 
-	height: 100%;
-	/* overflow: hidden; */
+background-attachment: scroll;
 }
 
 
@@ -125,7 +124,7 @@ body {
 	.pagination > .active > a
 	{
 		font-weight: bold;
-		color: rgb(255, 107, 107) !important;
+		color: rgb(50, 224, 255) !important;
 		background-color: rgba(0, 0, 0, 0.473) !important;
 		border: solid 1px rgba(0, 0, 0, 0.253) !important;
 	}
