@@ -38,9 +38,6 @@ img.bg{
 	position: fixed;
 	bottom: 0;
 	left: 0;
-
-	left: 50%;
-	margin-left: -740px;   /* 50% */
 }
 
 .about{
