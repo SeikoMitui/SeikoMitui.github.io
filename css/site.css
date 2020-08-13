@@ -18,14 +18,30 @@ body {
 }
 
 .gallery-background {
-	background: url('../images/gray-to-red-oil-background.jpg') no-repeat bottom center fixed;
+	/* background: url('../images/gray-to-red-oil-background.jpg') no-repeat bottom center fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-o-background-size: cover;
 
-	background-attachment: fixed;
+	background-attachment: fixed; */
 }
 
+img.bg{
+	min-height: 100%;
+	min-width: 1477px;
+	  
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+	  
+	/* Set up positioning */
+	position: fixed;
+	bottom: 0;
+	left: 0;
+
+	left: 50%;
+	margin-left: -740px;   /* 50% */
+}
 
 .about{
 	padding: 10px 35px 5px;
@@ -115,7 +131,7 @@ body {
 	.pagination > li > span:focus,
 	.pagination > li > span:hover
 	{
-		color: #b80000;
+		color: #49a3ec;
 		background-color: rgba(247, 247, 247, 0.288);
 		border-color: rgba(128, 128, 128, 0.212);
 	}
@@ -123,7 +139,7 @@ body {
 	.pagination > .active > a
 	{
 		font-weight: bold;
-		color: rgb(50, 255, 60) !important;
+		color: rgb(106, 225, 255) !important;
 		background-color: rgba(0, 0, 0, 0.473) !important;
 		border: solid 1px rgba(0, 0, 0, 0.253) !important;
 	}
