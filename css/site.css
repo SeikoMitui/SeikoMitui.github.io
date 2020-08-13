@@ -19,10 +19,10 @@ body {
 }
 
 .gallery-background {
-	/* background: url('../images/gray-to-red-oil-background.jpg') no-repeat bottom center fixed;
+	background: url('../images/gray-to-red-oil-background.jpg') no-repeat bottom center fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
-	-o-background-size: cover; */
+	-o-background-size: cover;
 }
 
 #ios-gallery-background{
