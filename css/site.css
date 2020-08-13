@@ -124,7 +124,7 @@ body {
 		font-weight: bold;
 		color: rgb(255, 107, 107) !important;
 		background-color: rgba(0, 0, 0, 0.473) !important;
-		border: solid 1px rgba(0, 0, 0, 0.062) !important;
+		border: solid 1px rgba(0, 0, 0, 0.253) !important;
 	}
 }
 @supports  ( backdrop-filter: saturate(20%) ) or ( -webkit-backdrop-filter: saturate(20%) ) {
