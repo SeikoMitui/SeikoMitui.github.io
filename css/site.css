@@ -41,6 +41,7 @@ body {
 
 .about{
 	padding: 10px 35px 5px;
+	border-radius: 6px;
 }
 
 .photo-card{
@@ -51,6 +52,7 @@ body {
 	color: slategray;
 	
 	border: 1px solid rgba(134, 134, 134, 0.555);
+	border-radius: 4px;
 }
 
 .dark-glass {
@@ -81,8 +83,8 @@ body {
 {
 	font-weight: bold;
 	color: rgb(194, 28, 28) !important;
-	background-color: rgba(240, 240, 240, 0.877) !important;
-    border: solid 1px rgb(177, 177, 177) !important;
+	background-color: rgba(71, 71, 71, 0.877) !important;
+    border: solid 1px rgb(0, 0, 0) !important;
 }
 
 @supports  ( background-clip: text ) or ( -webkit-background-clip: text ) {
