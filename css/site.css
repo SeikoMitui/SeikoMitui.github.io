@@ -41,12 +41,6 @@ body {
 
 .about{
 	padding: 10px 35px 5px;
-
-	color: rgba(255, 255, 255, 0.5);
-
-	background-color: rgba(32, 0, 0, 0.705);
-
-	border: 1px solid rgba(235, 235, 235, 0.329);
 }
 
 .photo-card{
@@ -63,6 +57,14 @@ body {
 	background-color: rgba(224, 224, 224, 0.877);
 	color: slategray;
 	border: 1px solid rgba(134, 134, 134, 0.555);
+}
+
+.dark-red-glass {
+	color: rgba(255, 255, 255, 0.5);
+
+	background-color: rgba(32, 0, 0, 0.705);
+
+	border: 1px solid rgba(235, 235, 235, 0.329);
 }
 
 .pagination > li > a:focus,
@@ -84,7 +86,7 @@ body {
 }
 
 @supports  ( background-clip: text ) or ( -webkit-background-clip: text ) {
-	.about .knockout-text {
+	.dark-red-glass .knockout-text {
 		background: url('../images/paintings/wide/seibutsu-object_7.JPG') no-repeat bottom center fixed;
 
 		background-clip: text;
@@ -107,7 +109,7 @@ body {
 }
 
 @supports  ( backdrop-filter: blur(4px) ) or ( -webkit-backdrop-filter: blur(4px) ) {
-	.about {
+	.dark-red-glass {
 		background-color: rgba(34, 0, 0, 0.568);
 		backdrop-filter: blur(4px);
 		-webkit-backdrop-filter: blur(4px);
@@ -142,33 +144,39 @@ body {
 	}
 }
 @supports  ( backdrop-filter: saturate(20%) ) or ( -webkit-backdrop-filter: saturate(20%) ) {
-	.about {
+	.dark-red-glass {
 		background-color: rgba(34, 0, 0, 0.568);
 		backdrop-filter: saturate(20%);
 		-webkit-backdrop-filter: saturate(20%);
 	}
 }
 @supports  ( backdrop-filter: blur(4px) saturate(20%) ) or ( -webkit-backdrop-filter: blur(4px) saturate(20%) ) {
-	.about {
+	.dark-red-glass {
 		background-color: rgba(34, 0, 0, 0.568);
 		backdrop-filter: blur(4px) saturate(20%);
 		-webkit-backdrop-filter: blur(4px) saturate(20%)
 	}
 }
 
-.about .btn{
+.knockout-text .btn{
 
 	background-color: rgba(0, 0, 0, 0);
 	color: rgba(255, 255, 255, 0.5);
 
 	border-radius: 2px;
-	border: 1px solid rgb(190, 190, 190);
+	border: 1px solid rgb(136, 136, 136);
 
 	padding: 1px 8px;
 	font-size: 150%;
 }
 
-.about hr{
+.glass-btn {
+	border-radius: 6px;
+	padding: 5px;
+	border: 0px;
+}
+
+.dark-red-glass hr{
 	border-top: 1px solid gray;
 }
 
