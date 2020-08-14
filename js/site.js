@@ -30,6 +30,9 @@ $('#paintingCloseupModal').on('show.bs.modal', function (event) {
 // 	|| (navigator.userAgent.includes("Mac") && "ontouchend" in document)
 //   };
 
+/* * * Choose fullscreen background implementation on loaded * * */
+
+
 function iOS() {
 return true;
 };
@@ -43,26 +46,51 @@ function backgroundSelect() {
 	}
 };
 
-  
-document.getElementById("translate-to-en").onclick = translateToEn;
-document.getElementById("translate-to-ja").onclick = translateToJa;
+/* * * Run Language Selection * * */
+var language = window.navigator.userLanguage || window.navigator.language;
+language = language.toLowerCase();
+if ( language.includes("en") ) {
+	translateToEn();
+}
+
+
+/* * * Settup button events * * */
+let enButtons = document.getElementsByClassName("translate-to-en");
+let jaButtons = document.getElementsByClassName("translate-to-ja");
+
+for (let buttonIndex = 0; buttonIndex < enButtons.length; buttonIndex++) {
+
+	const enButton = enButtons[buttonIndex];
+	enButton.onclick = translateToEn;
+
+	const jaButton = jaButtons[buttonIndex];
+	jaButton.onclick = translateToJa;
+}
 
 function translateToEn() {
-	window.alert("English");
+	var collectionEn = document.getElementsByClassName("show-on-english");
+	var collectionJp = document.getElementsByClassName("show-on-japanese");
 
-	document.getElementsByClassName("english").forEach(showElement);
-	document.getElementsByClassName("japanese").forEach(hideElement);
+	showElements(collectionEn);
+	hideElements(collectionJp);
 }
 function translateToJa() {
-	window.alert("Japanese");
+	var collectionEn = document.getElementsByClassName("show-on-english");
+	var collectionJp = document.getElementsByClassName("show-on-japanese");
 
-	document.getElementsByClassName("japanese").forEach(showElement);
-	document.getElementsByClassName("english").forEach(hideElement);
+	showElements(collectionJp);
+	hideElements(collectionEn);
 }
 
-function hideElement(element) {
-	element.display = "none";
+function hideElements(elements) {
+	for (let i = 0; i < elements.length; i++) {
+		const element = elements[i];
+		element.style.display = "none";
+	}
 }
-function showElement(element){
-	element.display = "block";
+function showElements(elements){
+	for (let i = 0; i < elements.length; i++) {
+		const element = elements[i];
+		element.style.display = "block";
+	}
 }
