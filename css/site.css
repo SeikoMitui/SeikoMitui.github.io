@@ -5,10 +5,12 @@
   }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-top: 52px;
+  	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Meiryo';
+	
+  	padding-top: 52px;
 
-  background-color: black;
+  	background-color: black;
 }
 
 .bottle-background {
