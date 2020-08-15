@@ -39,13 +39,10 @@ for (let buttonIndex = 0; buttonIndex < enButtons.length; buttonIndex++) {
 }
 
 function translateEn_onClick() {
-	alert("clicked en");
 	translateToEn();
 	saveLanguagePref(en);
 }
 function translateJa_onClick() {
-	alert("clicked ja");
-
 	translateToJa();
 	saveLanguagePref(ja);
 }
