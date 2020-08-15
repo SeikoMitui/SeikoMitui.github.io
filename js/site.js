@@ -7,7 +7,6 @@ const langKey = "language";
 /* * * Choose fullscreen background implementation if iOS (background cover not supported on safari) * * */
 
 if ( iOS() ) {
-	alert("test");
 	document.getElementById("ios-gallery-background").style.display = 'block';
 }
 
