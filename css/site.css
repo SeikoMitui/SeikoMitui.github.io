@@ -75,6 +75,11 @@ body {
 	border: 1px solid rgba(134, 134, 134, 0.555);
 	border-radius: 4px;
 }
+.sold {
+	color: cadetblue !important;
+	margin-top: 5px;
+	text-align: right;
+}
 
 .dark-glass {
 	background-color: rgba(224, 224, 224, 0.877);
