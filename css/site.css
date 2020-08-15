@@ -207,6 +207,10 @@ body {
 
 }
 
+.glass-link{
+	color: cadetblue;
+}
+
 .dark-red-glass hr{
 	border-top: 1px solid gray;
 }
