@@ -1,3 +1,7 @@
+const en = "en";
+const ja = "ja";
+const langKey = "language";
+
 
 /* * * On show bs modal, load correct image * * */
 $('#paintingCloseupModal').on('show.bs.modal', function (event) {
@@ -73,6 +77,8 @@ function translateToEn() {
 
 	showElements(collectionEn);
 	hideElements(collectionJp);
+
+	saveLanguagePref(en);
 }
 function translateToJa() {
 	var collectionEn = document.getElementsByClassName("show-on-english");
@@ -80,6 +86,8 @@ function translateToJa() {
 
 	showElements(collectionJp);
 	hideElements(collectionEn);
+
+	saveLanguagePref(ja);
 }
 
 function hideElements(elements) {
@@ -94,3 +102,46 @@ function showElements(elements){
 		element.style.display = "block";
 	}
 }
+
+loadLanguagePref();
+
+/* * * Remember Language Preference * * */
+
+function saveLanguagePref(lang){
+	setCookie(langKey, lang, 7);
+}
+function loadLanguagePref(){
+	let lang = getCookie(langKey);
+
+	if (lang == en) {
+		translateToEn();
+	}
+	else if (lang == ja) {
+		translateToJa();
+	}
+}
+
+
+function setCookie(cname, cvalue, exdays) {
+	var d = new Date();
+	d.setTime(d.getTime() + (exdays*24*60*60*1000));
+	var expires = "expires="+ d.toUTCString();
+	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+
+  function getCookie(cname) {
+	var name = cname + "=";
+	var decodedCookie = decodeURIComponent(document.cookie);
+	var ca = decodedCookie.split(';');
+
+	for(var i = 0; i <ca.length; i++) {
+	  var c = ca[i];
+	  while (c.charAt(0) == ' ') {
+		c = c.substring(1);
+	  }
+	  if (c.indexOf(name) == 0) {
+		return c.substring(name.length, c.length);
+	  }
+	}
+	return "";
+  }
