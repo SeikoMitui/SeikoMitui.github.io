@@ -27,7 +27,8 @@ body {
 	-o-background-size: cover;
 }
 
-#ios-gallery-background{
+/* cover wide screen (not perfect, but only solution for iphone) */
+.cover-wide-screen{
 	display: none;
 
 	min-height: 100%;
@@ -36,6 +37,22 @@ body {
 	/* Set up proportionate scaling */
 	width: 100%;
 	height: auto;
+	  
+	/* Set up positioning */
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+/* cover tall screen (not perfect, but only solution for iphone) */
+#ios-gallery-background{
+	display: none;
+
+	min-height: 1108;
+	min-width: 100%;
+
+	/* Set up proportionate scaling */
+	width: auto;
+	height: 100%;
 	  
 	/* Set up positioning */
 	position: fixed;
@@ -139,8 +156,8 @@ body {
 	.pagination > li > span:focus,
 	.pagination > li > span:hover
 	{
-		color: #a11919;
-		background-color: rgba(155, 155, 155, 0.288);
+		color: #395974;
+		background-color: rgba(247, 247, 247, 0.288);
 		border-color: rgba(128, 128, 128, 0.212);
 	}
 
