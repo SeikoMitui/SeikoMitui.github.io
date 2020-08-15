@@ -3,34 +3,12 @@ const ja = "ja";
 const langKey = "language";
 
 
-// function iOS() {
-// 	return [
-// 	  'iPad Simulator',
-// 	  'iPhone Simulator',
-// 	  'iPod Simulator',
-// 	  'iPad',
-// 	  'iPhone',
-// 	  'iPod'
-// 	].includes(navigator.platform)
-// 	// iPad on iOS 13 detection
-// 	|| (navigator.userAgent.includes("Mac") && "ontouchend" in document)
-//   };
 
 /* * * Choose fullscreen background implementation on loaded * * */
 
-
-function iOS() {
-	return true;
-};
-
-function backgroundSelect() {
-	if ( iOS() ) {
-		document.getElementById("ios-gallery-background").style.display = 'block';
-	}
-	else{
-	document.getElementById("ios-gallery-background").style.display = 'none';
-	}
-};
+if ( iOS() ) {
+	document.getElementById("ios-gallery-background").style.display = 'block';
+}
 
 
 /* * * Run Language Selection * * */
@@ -139,6 +117,21 @@ function setCookie(cname, cvalue, exdays) {
 	}
 	return "";
 }
+
+/* * * Detect Safari helper function * * */
+
+function iOS() {
+	return [
+	  'iPad Simulator',
+	  'iPhone Simulator',
+	  'iPod Simulator',
+	  'iPad',
+	  'iPhone',
+	  'iPod'
+	].includes(navigator.platform)
+	// iPad on iOS 13 detection
+	|| (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+  };
 
 
   /* * * On show bs modal, load correct image * * */

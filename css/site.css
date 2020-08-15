@@ -10,7 +10,7 @@ body {
 
   	padding-top: 52px;
 
-  	background-color: black;
+  	background-color: rgb(90, 90, 90);
 }
 
 .bottle-background {
@@ -21,13 +21,15 @@ body {
 }
 
 .gallery-background {
-	background: url('../images/gray-to-red-oil-background.jpg') no-repeat bottom center fixed;
+	background: url('../images/paintings/wide/tsukimichi-lunar_orbit.JPG') no-repeat bottom center fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-o-background-size: cover;
 }
 
 #ios-gallery-background{
+	display: none;
+
 	min-height: 100%;
 	min-width: 1477px;
 
