@@ -54,10 +54,19 @@ let jaButtons = document.getElementsByClassName("translate-to-ja");
 for (let buttonIndex = 0; buttonIndex < enButtons.length; buttonIndex++) {
 
 	const enButton = enButtons[buttonIndex];
-	enButton.onclick = translateToEn;
+	enButton.onclick = translateEn_onClick;
 
 	const jaButton = jaButtons[buttonIndex];
-	jaButton.onclick = translateToJa;
+	jaButton.onclick = translateJa_onClick;
+}
+
+function translateEn_onClick() {
+	translateToEn();
+	saveLanguagePref(en);
+}
+function translateJa_onClick() {
+	translateToJa();
+	saveLanguagePref(ja);
 }
 
 function translateToEn() {
@@ -66,8 +75,6 @@ function translateToEn() {
 
 	showElements(collectionEn);
 	hideElements(collectionJp);
-
-	saveLanguagePref(en);
 }
 function translateToJa() {
 	var collectionEn = document.getElementsByClassName("show-on-english");
@@ -75,8 +82,6 @@ function translateToJa() {
 
 	showElements(collectionJp);
 	hideElements(collectionEn);
-
-	saveLanguagePref(ja);
 }
 
 function hideElements(elements) {
