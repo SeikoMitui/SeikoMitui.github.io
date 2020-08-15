@@ -103,7 +103,7 @@ function showElements(elements){
 	}
 }
 
-//loadLanguagePref();
+loadLanguagePref();
 
 /* * * Remember Language Preference * * */
 
