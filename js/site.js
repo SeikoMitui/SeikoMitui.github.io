@@ -3,24 +3,6 @@ const ja = "ja";
 const langKey = "language";
 
 
-/* * * On show bs modal, load correct image * * */
-$('#paintingCloseupModal').on('show.bs.modal', function (event) {
-	
-	var button = $(event.relatedTarget); // Button that triggered the modal
-	var imgPreview = button.find('img');
-	var srcAttr = imgPreview.attr('src');  // get image's source from the button's preview image
-	var altAttr = imgPreview.attr('alt');
-
-	// Print image name on title
-	var modal = $(this);
-	modal.find('.modal-title').text(altAttr);
-
-	// Set image source on modal
-	var modalImage = document.getElementById('paintingCloseupModal-img').src = srcAttr; //faster?
-	modalImage.src = srcAttr;
-	modalImage.alt = altAttr;
-});
-
 // function iOS() {
 // 	return [
 // 	  'iPad Simulator',
@@ -38,7 +20,7 @@ $('#paintingCloseupModal').on('show.bs.modal', function (event) {
 
 
 function iOS() {
-return true;
+	return true;
 };
 
 function backgroundSelect() {
@@ -50,15 +32,22 @@ function backgroundSelect() {
 	}
 };
 
+
 /* * * Run Language Selection * * */
-// var language = window.navigator.userLanguage || window.navigator.language;
-// language = language.toLowerCase();
-// if ( language.includes("en") ) {
-// 	translateToEn();
-// }
+
+let success = loadLanguagePref();
+if (!success) {
+	// if no language was specified
+	var language = window.navigator.userLanguage || window.navigator.language;
+	language = language.toLowerCase();
+	if ( language.includes("en") ) {
+		translateToEn();
+	}
+}
 
 
 /* * * Settup button events * * */
+
 let enButtons = document.getElementsByClassName("translate-to-en");
 let jaButtons = document.getElementsByClassName("translate-to-ja");
 
@@ -103,9 +92,7 @@ function showElements(elements){
 	}
 }
 
-loadLanguagePref();
-
-/* * * Remember Language Preference * * */
+/* * * language preference cookies * * */
 
 function saveLanguagePref(lang){
 	setCookie(langKey, lang, 7);
@@ -119,16 +106,18 @@ function loadLanguagePref(){
 	else if (lang == ja) {
 		translateToJa();
 	}
+	else {
+		return false;
+	}
+
+	return true;
 }
-
-
 function setCookie(cname, cvalue, exdays) {
 	var d = new Date();
 	d.setTime(d.getTime() + (exdays*24*60*60*1000));
 	var expires = "expires="+ d.toUTCString();
 	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-  }
-
+}
   function getCookie(cname) {
 	var name = cname + "=";
 	var decodedCookie = decodeURIComponent(document.cookie);
@@ -144,4 +133,24 @@ function setCookie(cname, cvalue, exdays) {
 	  }
 	}
 	return "";
-  }
+}
+
+
+  /* * * On show bs modal, load correct image * * */
+
+$('#paintingCloseupModal').on('show.bs.modal', function (event) {
+	
+	var button = $(event.relatedTarget); // Button that triggered the modal
+	var imgPreview = button.find('img');
+	var srcAttr = imgPreview.attr('src');  // get image's source from the button's preview image
+	var altAttr = imgPreview.attr('alt');
+
+	// Print image name on title
+	var modal = $(this);
+	modal.find('.modal-title').text(altAttr);
+
+	// Set image source on modal
+	var modalImage = document.getElementById('paintingCloseupModal-img').src = srcAttr; //faster?
+	modalImage.src = srcAttr;
+	modalImage.alt = altAttr;
+});
