@@ -139,8 +139,8 @@ body {
 	.pagination > li > span:focus,
 	.pagination > li > span:hover
 	{
-		color: #49a3ec;
-		background-color: rgba(247, 247, 247, 0.288);
+		color: #a11919;
+		background-color: rgba(155, 155, 155, 0.288);
 		border-color: rgba(128, 128, 128, 0.212);
 	}
 
