@@ -51,11 +51,11 @@ function backgroundSelect() {
 };
 
 /* * * Run Language Selection * * */
-var language = window.navigator.userLanguage || window.navigator.language;
-language = language.toLowerCase();
-if ( language.includes("en") ) {
-	translateToEn();
-}
+// var language = window.navigator.userLanguage || window.navigator.language;
+// language = language.toLowerCase();
+// if ( language.includes("en") ) {
+// 	translateToEn();
+// }
 
 
 /* * * Settup button events * * */
@@ -103,7 +103,7 @@ function showElements(elements){
 	}
 }
 
-loadLanguagePref();
+//loadLanguagePref();
 
 /* * * Remember Language Preference * * */
 
